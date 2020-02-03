@@ -49,6 +49,7 @@ void SPI_SendString(uint8 *str)
 		SPI_SendByte(*str);
 		str++;
 	}
+	SPI_SendByte(Rec_char);
 }
 
 void SPI_ReceiveString(uint8 *str)
